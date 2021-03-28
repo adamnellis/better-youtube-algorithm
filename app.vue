@@ -88,7 +88,7 @@ module.exports = {
 
         listVideos: function() {
             // For each channel, list its most recently published videos
-            this.latestVideosSnippets = []
+            this.latestVideos = []
             for(const channelSnippet of this.mySubscriptionsSnippets) {
                 gapi.client.youtube.channels.list({
                     'part': 'contentDetails',
