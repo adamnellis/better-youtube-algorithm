@@ -1,0 +1,8 @@
+
+# Pycharm project files
+.idea/**
+venv/**
+
+# Local webserver for testing
+node_modules/**
+package-lock.json

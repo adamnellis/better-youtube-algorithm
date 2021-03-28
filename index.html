@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script><!-- TODO: Put version number in here -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://apis.google.com/js/api.js"></script><!-- Google API client library -->
+    <script src="moment.js"></script><!-- date/time functions -->
+    <script src="credentials.js"></script><!-- Google API login info -->
+
+    <title>Better YouTube Algorithm</title>
+</head>
+<body class="bg-gray-100 text-gray-900">
+<div id="my-app">
+    <app></app>
+</div>
+<script type="text/javascript">
+    const app = new Vue({
+        el: '#my-app',
+        components: {
+          'app': httpVueLoader('app.vue')
+        }
+    });
+</script>
+</body>
+</html>
